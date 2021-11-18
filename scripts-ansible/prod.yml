@@ -3,4 +3,4 @@ all:
     local:
       ansible_host: 172.0.0.1
     client: 
-      ansible_host: ip_adress
+      ansible_host: ip_address
