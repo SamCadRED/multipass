@@ -37,13 +37,17 @@ users:
 package_update: true
 package_upgrade: true
 
-# packages:
-#   - git
-#   - ansible
-#   - tree
-#   - vim
-#   - nano
-#   - whois
+packages:
+  - git
+  - ansible
+  - tree
+  - vim
+  - nano
+  - whois
+
+runcmd:
+# - sudo usermod -a -G sudo ubuntu
+
 
 # Valid Values:
 #   name: The user's login name
