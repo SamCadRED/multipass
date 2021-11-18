@@ -1,0 +1,10 @@
+Command Ansible:
+
+Pinger les membres du groupe :
+ansible -i prod.yml all -m ping
+
+Transformer hosts.ini en prod.yml :
+ansible-inventory -i hosts.ini -y --list > prod.yml
+
+Lancer le playbook myweb.yml
+ansible-playbook -i prod.yml myweb.yml
