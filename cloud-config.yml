@@ -8,7 +8,7 @@
 #
 # | multipass list | multipass start XX | multipass stop XX | multipass delete XX | multipass purge | 
 #
-# multipass launch -n test --cloud-init multipass/cloud-config.yml
+# multipass launch -n test --cloud-init cloud-config.yml
 ######################
 
 groups:
@@ -30,9 +30,9 @@ users:
     lock_passwd: false
     plain_text_passwd: 'ubuntu'
     passwd: $6$rounds=4096$KC1Yup7scEk$qYWVsjeRAzZOg8qRNOuq/Z.ItKsVYUGiIAxd6YMJGDTqWe99SndjVmxVxOblFGgsgoz3m2hlmS2uTUlaAJylf/ #sam
-   ssh_authorized_keys:
-     - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDbQzr1djpyzopjSh77k9ahvKwMlzoIQdeK+/ahR+k7k1Ubvzr6flcSWJBF+jw/7PjPk++4ZZF3+Nl0H40kXtp0KLvbh4Qy5h8gM+opDgzeEJinTYHxw6jYHCxbQLnSC7niGfCm3APnrbacD96wlpvGRgh7YQcgbHuHbO+jHX+UWwk+G9LrUbJA+KyUsoZNMVKnTE1ovPgIQRq4SNU7wUH33KGaNYsH9QhpTs2GqSpVb+tCWUksyprarmAjEfBq1zjP3GKWGq/b1UvbbmQPWPEDciBGKZABlOaXr5HAh8IH37Rwg5eHvotIOhUj5wEFcjzsMPRpRrboXfJxbZyAuFbvdC5GIrPN/bHIIbQWBsWkYSMx4Cd2rXnqzistKyTfWQyrRXm0y8kgE1GHXDKllX4H5qA+UCfElJZXdmQN7h7/FxYwkMtF7AD/5Dtrm5EKZV26a2/bakihlkGOfjppBeI4RVy+lrY1HYF4bZGtKWnuzWTAdO/XXHbnaJaLvG+OIIU= samuel@Samuels-MacBook-Pro.local
-   sudo: ALL=(ALL) NOPASSWD:ALL
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDbQzr1djpyzopjSh77k9ahvKwMlzoIQdeK+/ahR+k7k1Ubvzr6flcSWJBF+jw/7PjPk++4ZZF3+Nl0H40kXtp0KLvbh4Qy5h8gM+opDgzeEJinTYHxw6jYHCxbQLnSC7niGfCm3APnrbacD96wlpvGRgh7YQcgbHuHbO+jHX+UWwk+G9LrUbJA+KyUsoZNMVKnTE1ovPgIQRq4SNU7wUH33KGaNYsH9QhpTs2GqSpVb+tCWUksyprarmAjEfBq1zjP3GKWGq/b1UvbbmQPWPEDciBGKZABlOaXr5HAh8IH37Rwg5eHvotIOhUj5wEFcjzsMPRpRrboXfJxbZyAuFbvdC5GIrPN/bHIIbQWBsWkYSMx4Cd2rXnqzistKyTfWQyrRXm0y8kgE1GHXDKllX4H5qA+UCfElJZXdmQN7h7/FxYwkMtF7AD/5Dtrm5EKZV26a2/bakihlkGOfjppBeI4RVy+lrY1HYF4bZGtKWnuzWTAdO/XXHbnaJaLvG+OIIU= samuel@Samuels-MacBook-Pro.local
+    sudo: ALL=(ALL) NOPASSWD:ALL
 
 package_update: true
 package_upgrade: true
