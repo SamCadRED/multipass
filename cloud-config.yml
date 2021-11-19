@@ -8,7 +8,7 @@
 #
 # | multipass list | multipass start XX | multipass stop XX | multipass delete XX | multipass purge | 
 #
-# multipass launch -n test --cloud-init cloud-config.yml
+# multipass launch -n server --cloud-init cloud-config.yml
 ######################
 
 groups:
